@@ -149,7 +149,7 @@ CREATE TABLE email_logs (
 
 -- Users (3 customers + 1 admin)
 INSERT INTO users (id, email, password, full_name, role, created_at) VALUES
-  (1, 'sivaprasad.valluru@gmail.com', 'siva@123', 'Siva', 'customer', '2026-08-24T10:00:00'),
+  (1, 'tom@gmail.com', 'tom@123', 'Tom', 'customer', '2026-08-24T10:00:00'),
   (2, 'bob@example.com', 'bob123', 'Bob Customer', 'customer', '2026-09-03T10:00:00'),
   (3, 'charlie@example.com', 'charlie123', 'Charlie Customer', 'customer', '2026-09-17T10:00:00'),
   (4, 'admin@example.com', 'admin123', 'Admin User', 'admin', '2026-08-17T10:00:00');
@@ -282,7 +282,7 @@ INSERT INTO returns (id, order_id, order_item_id, user_id, reason, status, reque
 -- Tickets (thread_id examples; user_email matches seeded customers)
 INSERT INTO tickets (id, user_id, return_id, subject, status, thread_id, user_email, created_at, updated_at) VALUES
   (1, 1, 1, 'Return request for Portable SSD 1TB', 'OPEN',
-   'a1b2c3d4-e5f6-7890-abcd-ef1234567890', 'sivaprasad.valluru@gmail.com',
+   'a1b2c3d4-e5f6-7890-abcd-ef1234567890', 'tom@gmail.com',
    '2026-09-16T09:05:00', '2026-09-16T09:05:00'),
   (2, 2, 2, 'Return request after webcam issue', 'RESOLVED',
    'f47ac10b-58cc-4372-a567-0e02b2c3d479', 'bob@example.com',
